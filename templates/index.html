@@ -1,19 +1,22 @@
 <!doctype html>
-<title>Stock Info</title>
+<title>Chicago Crimes</title>
 <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
 <div class=page>
-  <h1>Stock Info</h1>
+  <h1>Robberies in Chicago</h1>
   <div class=metanav>
-    <h4>
-      Please enter the Stock ticker eg. GOOG or AMD.
-    </h4>
-    <form id='stock_ticker' method='post' action='index' >
-      <p>
-    Ticker: <input type='text' name='name_ticker' />
-      </p>
-    <input type='submit' value='Submit' />
-      </p>
-    </form>
+    <h2>Crimes in a Week</h2>
+    <p>This is a distribution of robberies in Chicago city ward 5 over 
+    the week. We can see<br> clearly the spikes of each weekday right after 
+    midnight!<br>
+    It also looks like robbers do rest on weekends, then come back to 
+    work on Monday. 
+    </p>
+    <img src="../images/1.weekhour.png" alt="Weekhour" style="width:608px;height:456px;">
+    <h2>Crime centers Move over the day</h2>
+    <p>From this animation we can see the robberies cluster closely. The closer you get to the<br> center of the clusters, it is more risky.<br> As the crime centers moves over the day, you should pick the safe walking path based on <br>the time you get out of the door!
+    </p>
+    <img src="../images/Locations of Robeery.gif" alt="Weekhour" style="width:608px;height:456px;">
 
+    
   </div>
 </div>
